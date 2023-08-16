@@ -43,6 +43,10 @@
                     echo "It is time to report to leader.";
                 continue;
 
+                case "$time < 08:00:00 am" && "$time > 05:00:00 pm";
+                echo "It is free time.";
+                continue;
+
                 default:
                 echo "It is time to work.";
             }
