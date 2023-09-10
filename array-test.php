@@ -10,10 +10,8 @@ $user = [
 foreach($user as $key => $data) {
 
     if($key === "gratuated" && $data == true) {
-        $data = "Yes";
+        echo "User Johndoe is gratuated.";
     } else if($key === "gratuated" && $data == false) {
-        $data = "No";
+        echo "User John Doe is under graduated.";
     }
-     
-    echo $key . "=" . $data. "<br>";
 }
